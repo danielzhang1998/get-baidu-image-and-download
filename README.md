@@ -1,2 +1,12 @@
 # get-baidu-image-and-download
-download the baidu image, then zip it
+
+运行 <i>baidu_spider_main.py</i>
+输入想要在百度图片里面搜索的关键词
+选择想要下载的图片数量（数值大于 30）
+
+下载第一张图片前 或 每 约 600 张图片将会将剩下的图片放置到一个新的子文件夹
+
+下载完毕后，会要求设置 zip 文件的密码
+将会以文件夹为单位进行压缩
+
+感谢使用！
