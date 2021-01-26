@@ -16,7 +16,3 @@ def get_image_link(url):
         except KeyError:
             pass
     return link_list
-
-if __name__ == '__main__':
-    url = input('enter\n')
-    get_image_link(url)

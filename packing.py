@@ -26,16 +26,4 @@ def get_dir_constents(name, sPath):
                 path.append(sChildPath)
                 new_spath = sPath.split(name)[-1]       # 此处需要一个分割名，用来辨别路径的分割位置；如果没有这一行，压缩文件中则会出现根路径
                 spath.append(new_spath)
-
-if __name__ == '__main__':
-    os.chdir('/Users/zhanghanlin/Documents/program/hanfu')
-    password = input('enter the password here!\n')
-    for each in os.listdir('.'):
-        path = []
-        spath = []
-        if '.DS_Store' not in each:
-            print(each)
-            print(os.getcwd() + '/' + each)
-            get_dir_constents(each, os.getcwd() + '/' + each)
-            zip_it(each, password)
     
